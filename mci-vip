@@ -49,11 +49,11 @@
                         "172.16.0.2/32",
                         "2606:4700:110:8e8d:9c8e:7529:43bf:f1c4/128"#amir
                 ],
-                "private_key": "2HDaK/ycugkD775eU8b7NWqAHUTVbCKzam7tKH+q/Hg=",
-                "server": "162.159.192.28",
-                "server_port": 1074,
+                "private_key": "EBMuPgMmP324RYMVi95gexITT+5bZWw22/4U9T4+iWU=",
+                "server": "162.159.192.191",
+                "server_port": 890,
                 "peer_public_key": "oNPvt2eWopsCAHdWGzDEiuzn6xpvYB74oOYaYnei5lk=",
-                "reserved": [197,207,250],
+                "reserved": [54,52,50],
                 "mtu": 1280,
                 "fake_packets": "5-10"
                 },
@@ -65,11 +65,11 @@
                         "172.16.0.2/32",
                         "2606:4700:110:83c1:bb6f:e07c:b5b2:c475/128"
                 ],
-                "private_key": "0KxXysbVi1IHcWXMbgG5GDGL3CD4vzAR9MMyGJ9u0HA=",
-                "server": "162.159.192.28",
-                "server_port": 1074,
+                "private_key": "AGlHZIZV2QgUDTlUPh9LgNkJbXiUzPaX9PZ8XIWMfXA=",
+                "server": "162.159.192.191",
+                "server_port": 890,
                 "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-                "reserved": [30,100,108],
+                "reserved": [50,12,87],
                 "mtu": 1280,
                 "fake_packets": "5-10"
                 },
