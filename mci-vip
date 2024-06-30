@@ -24,7 +24,7 @@
         "outbounds": [
                 {
                 "type": "selector",
-                "tag": "select",
+                "tag": "vip",
                 "outbounds": [
                         "auto",
                         "IP->Iran, Yotube:Geekmeek",
@@ -44,7 +44,7 @@
                 },
                 {
                 "type": "wireguard",
-                "tag": "IP->Iran, Yotube:Geekmeek",
+                "tag": "vip1",
                 "local_address": [
                         "172.16.0.2/32",
                         "2606:4700:110:8e8d:9c8e:7529:43bf:f1c4/128"#amir
@@ -59,7 +59,7 @@
                 },
                 {
                 "type": "wireguard",
-                "tag": "IP->Main, Yotube:Geekmeek",
+                "tag": "IP->vip2",
                 "detour": "IP->Iran, Yotube:Geekmeek",
                 "local_address": [
                         "172.16.0.2/32",
