@@ -1,59 +1,36 @@
-{
-        "route": {                                                "geoip": {
-                "path": "geo-assets\\sagernet-sing-geoip-geoip.db"                                                  },
-                "geosite": {                                      "path": "geo-assets\\sagernet-sing-geosite-geosite.db"                                              },
-                "rules": [
-                {
-                        "inbound": "dns-in",
-                        "outbound": "dns-out"                     },
-                {
-                        "port": 53,                                       "outbound": "dns-out"
-                },
-                {
-                        "clash_mode": "Direct",
-                        "outbound": "direct"
-                },
-                {
-                        "clash_mode": "Global",
-                        "outbound": "select"
-                }
+{                                                                     "route": {
+                "geoip": {                                                    "path": "geo-assets\\sagernet-sing-geoip-geoip.db"                                                                          },
+                "geosite": {                                                  "path": "geo-assets\\sagernet-sing-geosite-geosite.db"                                                                      },
+                "rules": [                                                    {
+                        "inbound": "dns-in",                                          "outbound": "dns-out"
+                },                                                            {
+                        "port": 53,                                                   "outbound": "dns-out"
+                },                                                            {
+                        "clash_mode": "Direct",                                       "outbound": "direct"
+                },                                                            {
+                        "clash_mode": "Global",                                       "outbound": "select"
+                }                                                             ],
+                "auto_detect_interface": true,                                "override_android_vpn": true
+        },                                                            "outbounds": [
+                {                                                             "type": "selector",
+                "tag": "select",                                              "outbounds": [
+                        "auto",                                                       "IP->Iran, Yotube:Geekmeek",
+                        "IP->Main, Yotube:Geekmeek"                           ],
+                "default": "auto"                                             },
+                {                                                             "type": "urltest",
+                "tag": "auto",                                                "outbounds": [
+                        "IP->Iran, Yotube:Geekmeek",                                  "IP->Main, Yotube:Geekmeek"
+                ],                                                            "url": "http://cp.cloudflare.com/",
+                "interval": "10m0s"                                           },
+                {                                                             "type": "wireguard",
+                "tag": "IP->Iran, Yotube:Geekmeek",                           "local_address": [
+                        "172.16.0.2/32",                                              "2606:4700:110:8342:667a:9670:6edb:445/128"
                 ],
-                "auto_detect_interface": true,
-                "override_android_vpn": true
-        },
-        "outbounds": [
-                {
-                "type": "selector",
-                "tag": "select",
-                "outbounds": [
-                        "auto",
-                        "IP->Iran, Yotube:Geekmeek",
-                        "IP->Main, Yotube:Geekmeek"
-                ],
-                "default": "auto"
-                },
-                {
-                "type": "urltest",
-                "tag": "auto",
-                "outbounds": [
-                        "IP->Iran, Yotube:Geekmeek",
-                        "IP->Main, Yotube:Geekmeek"
-                ],
-                "url": "http://cp.cloudflare.com/",
-                "interval": "10m0s"
-                },
-                {
-                "type": "wireguard",
-                "tag": "IP->Iran, Yotube:Geekmeek",
-                "local_address": [
-                        "172.16.0.2/32",
-                        "2606:4700:110:8e8d:9c8e:7529:43bf:f1c4/128"#amir
-                ],
-                "private_key": "aHc8Y1Aqj1cy6j3x9WadHUOdxGcZPEesm5VyhA/s4U4=",
-                "server": "188.114.99.244",
-                "server_port": 8319,
+                "private_key": "0HWhcJz9ca3aTp6ZkxKo9z4mtJfYytaR1Q635DLtglI=",
+                "server": "162.159.192.30",
+                "server_port": 880,
                 "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-                "reserved": [104,129,199],
+                "reserved": [119,230,131],
                 "mtu": 1280,
                 "fake_packets": "5-10"
                 },
@@ -63,13 +40,13 @@
                 "detour": "IP->Iran, Yotube:Geekmeek",
                 "local_address": [
                         "172.16.0.2/32",
-                        "2606:4700:110:83c1:bb6f:e07c:b5b2:c475/128"
+                        "2606:4700:110:8400:b3b2:727b:35d:b9f4/128"
                 ],
-                "private_key": "kB882k16OpxkFSGvcGQT2aipd1eFLPfysNfsa+t3mE4=",
-                "server": "188.114.99.244",
-                "server_port": 8319,
-                "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",#amir
-                "reserved": [171,224,243],
+                "private_key": "2F1OB047i2QVNWDrLIbBDPOJJ1rI99WN15B+1SzW5VY=",
+                "server": "162.159.192.30",
+                "server_port": 880,
+                "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+                "reserved": [79,229,146],
                 "mtu": 1280,
                 "fake_packets": "5-10"
                 },
@@ -90,4 +67,4 @@
                 "tag": "block"
                 }
         ]
-}
+        }
