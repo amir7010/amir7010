@@ -1,0 +1,3 @@
+vless://b175c59a-fbb2-4a8a-a2db-6935c233538e@104.25.75.14:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=vip.amir70100zz.workers.dev&fp=randomized&type=ws&sni=vip.amir70100zz.workers.dev#vip
+vless://8d7fcff8-bc02-41c3-b5ec-91089d0c7ea7@104.17.57.248:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=vip1.amir70100zz.workers.dev&fp=randomized&type=ws&sni=vip1.amir70100zz.workers.dev#VIP2
+vless://8d7fcff8-bc02-41c3-b5ec-91089d0c7ea7@workers.cloudflare.cyou:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=vip1.amir70100zz.workers.dev&fp=randomized&type=ws&sni=vip1.amir70100zz.workers.dev#VIP1
